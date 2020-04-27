@@ -32,3 +32,5 @@ By default the px4flow-v1_default is uploaded; to upload a different version, ru
   make <target> upload-usb
 ```
 Where `<target>` is one of the px4flow targets listed by `make help`.
+
+__Note:__ For archlinux, the first line in the file `Flow/src/lib/uavcan/libuavcan/dsdl_compiler/libuavcan_dsdlc` should be modified as `#!/usr/bin/env python2` and make sure the whole program use python2 not 3.
